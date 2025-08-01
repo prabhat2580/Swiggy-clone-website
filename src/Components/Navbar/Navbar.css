@@ -1,0 +1,156 @@
+/* Base reset (same as before) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: orangered;
+}
+
+/* Navbar wrapper */
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: orangered;
+  padding: 20px 60px;
+  color: white;
+  flex-wrap: wrap;
+  position: relative;
+
+}
+
+/* Logo */
+.swiggy-logo img {
+  height: 40px;
+}
+
+/* Hamburger icon (hidden on desktop) */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+/* Menus */
+.nav-menu-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+/* Button styles */
+.menu-btn,
+.get-app-btn,
+.sign-in-btn {
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.menu-btn {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.get-app-btn {
+  background: transparent;
+  border: 1.5px solid white;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.sign-in-btn {
+  background-color: black;
+  border: none;
+
+  color: white;
+  padding: 14px 24px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+}
+
+/* Hover effects */
+.get-app-btn:hover {
+  background-color: white;
+  color: orangered;
+}
+.sign-in-btn:hover {
+  opacity: 0.9;
+}
+
+/* ✅ Mobile View */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .nav-menu-wrapper {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 20px;
+    border: 1px solid rgb(187, 53, 4);
+    
+  }
+
+  .nav-menu-wrapper.open {
+    display: flex;
+  }
+
+  .nav-menu,
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+
+  }
+  
+  
+
+  .menu-btn,
+  .get-app-btn,
+  .sign-in-btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+
+  }
+}

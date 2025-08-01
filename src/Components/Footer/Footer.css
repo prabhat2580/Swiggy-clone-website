@@ -1,0 +1,55 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: rgb(40, 38, 38);
+    height: 260px;
+    width: 100%;
+    flex-wrap: wrap; /* Important for responsiveness */
+}
+
+.banner h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    color: rgb(150, 143, 143);
+}
+
+.banner img {
+    height: 100px;
+    width: 100px;
+}
+
+.iphone-icon img {
+    height: 260px;
+    width: 350px;
+}
+
+/* ✅ Media Query for Tablets and Below */
+@media (max-width: 970px) {
+    .banner {
+        padding: 20px 20px;
+        gap: 40px; /* Reduce gap on smaller screens */
+        height: auto; /* Allow flexible height */
+    }
+
+    .iphone-icon img {
+        height: auto;
+        width: 300px; /* ✅ fixed: added px */
+    }
+}
+@media (max-width: 300px){
+    .iphone-icon img {
+        height: auto;
+        width: 200px; /* ✅ fixed: added px */
+    }
+}
+@media (max-width: 200px){
+    .iphone-icon img {
+        height: auto;
+        width: 150px; /* ✅ fixed: added px */
+    }
+}

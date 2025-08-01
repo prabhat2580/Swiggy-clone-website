@@ -1,0 +1,133 @@
+body{
+    background-color: white;
+}
+.category-wrapper {
+  position: relative;
+  padding: 100px 120px ;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.category-heading {
+  font-size: 24px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+}
+
+.scroll-arrows {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-btn {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 20px;
+  cursor: pointer;
+  /* box-shadow: 0 2px 6px rgba(0,0,0,0.15); */
+}
+
+.category-scroll {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+.scroll-inner-grid {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, 1fr); /* two rows */
+  grid-auto-columns: 120px; /* controls how many show per scroll */
+  gap: 50px;
+}
+
+.category-card {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: transform 0.2s ease-in-out;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 30%;
+  margin-bottom: 8px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); */
+}
+
+.category-label {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+@media (max-width: 1024px) {
+  .category-wrapper {
+    padding: 60px 80px;
+  }
+
+  .arrow-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .category-img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-wrapper {
+    padding: 40px 60px;
+  }
+
+  .category-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .category-label {
+    font-size: 12px;
+  }
+
+  .arrow-btn {
+    display: none; /* hide arrows on small screens if needed */
+  }
+}
+
+@media (max-width: 480px) {
+  .category-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .category-label {
+    font-size: 11px;
+  }
+
+  .scroll-inner-grid {
+    grid-auto-columns: 100px;
+  }
+  .category-wrapper {
+    padding: 20px 40px;
+  }
+}
+
