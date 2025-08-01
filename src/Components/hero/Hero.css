@@ -82,11 +82,12 @@
 /* Veggie Image Left */
 .hero-left-img-wrapper {
   position: absolute;
-  
-  bottom:1;
+  bottom: 1;
   left: 0;
   z-index: 1;
   max-width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-left-img {
@@ -101,6 +102,8 @@
   right: 0;
   z-index: 1;
   max-width: 300px;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-right-img {
@@ -145,10 +148,6 @@
   display: block;
 }
 
-.food-btn:hover {
-  /* transform: translateY(-5px); */
-  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); */
-}
 
 @media (max-width: 950px){
     .hero-container{
