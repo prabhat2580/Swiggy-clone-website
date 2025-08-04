@@ -218,3 +218,9 @@
     max-width: 180px;
   }
 }
+@media (max-width:270px){
+  .input-field-1,
+  .input-field-2{
+    width:180px;
+  }
+}
