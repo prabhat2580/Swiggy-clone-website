@@ -24,13 +24,13 @@ export default function SignInSidebar({ onLogin }) {
       return;
     }
 
-    alert('Logged in successfully!');
+    // alert('Logged in successfully!');
     onLogin(inputData);
   };
 
   return (
     <div className="sidebar-overlay" onClick={() => {}}>
-      <div className="signin-sidebar" onClick={(e) => e.stopPropagation()}>
+      <div className="signin-sidebar" >
         <button className="close-btn" onClick={() => {}}></button>
         <form className='signin-form' onSubmit={handleSubmit}>
           <h1>Login</h1>

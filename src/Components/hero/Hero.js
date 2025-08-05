@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Hero.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Hero() {
+  const navigate = useNavigate();
+  
+
+  function handleButtonClick(){
+    navigate('/Component2');
+  }
+
   return (
     <div className='hero-container'>
       {/* Left Veggie Image */}
@@ -47,8 +55,8 @@ export default function Hero() {
           />
         </div>
       </div>
-      <div className='food-insta-dine-btn'>
-        <button className="food-btn">
+      <div className='food-insta-dine-btn' >
+        <button className="food-btn" onClick={handleButtonClick}>
   <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/MERCHANDISING_BANNERS/IMAGES/MERCH/2024/7/23/ec86a309-9b06-48e2-9adc-35753f06bc0a_Food3BU.png" alt="Icon" />
 </button>
 
