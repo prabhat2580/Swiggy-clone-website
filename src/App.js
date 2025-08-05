@@ -11,7 +11,7 @@ export default function App() {
     
         <Routes>
           <Route path="/" element={<MainPage/>}/>
-          <Route path='/Component2' element={<MainPage2/>}/>
+          <Route path='/FoodDelivery' element={<MainPage2/>}/>
 
         </Routes>
      

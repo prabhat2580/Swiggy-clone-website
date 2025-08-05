@@ -7,7 +7,7 @@ export default function Hero() {
   
 
   function handleButtonClick(){
-    navigate('/Component2');
+    navigate('/FoodDelivery');
   }
 
   return (
