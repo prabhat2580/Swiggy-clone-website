@@ -9,6 +9,7 @@
   display: flex;
   justify-content: flex-end;
   z-index: 999;
+  font-family: sans-serif;
 }
 
 /* Sidebar panel */
@@ -54,11 +55,13 @@
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  
 }
 
 .login-btn {
   background-color: orangered;
   color: white;
+   font-family: "Huninn", sans-serif;
   padding: 12px;
   font-size: 16px;
   border: none;
@@ -67,9 +70,10 @@
 }
 
 .disclaimer {
-  font-size: 12px;
+  font-size: 14px;
   color: #555;
   margin-top: 10px;
+   font-family: "Huninn", sans-serif;
 }
 
 @media (max-width: 500px) {

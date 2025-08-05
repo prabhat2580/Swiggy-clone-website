@@ -31,7 +31,7 @@ export default function SignInSidebar({ onLogin }) {
   return (
     <div className="sidebar-overlay" onClick={() => {}}>
       <div className="signin-sidebar" onClick={(e) => e.stopPropagation()}>
-        <button className="close-btn" onClick={() => {}}>×</button>
+        <button className="close-btn" onClick={() => {}}></button>
         <form className='signin-form' onSubmit={handleSubmit}>
           <h1>Login</h1>
           <input
