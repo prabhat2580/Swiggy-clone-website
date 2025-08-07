@@ -1,47 +1,110 @@
-.Navbar2-container{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 100px 10px 40px;
-background-color: white;
- box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
+.Navbar2-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px 10px 40px;
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 20px;
+  position: relative;
+  z-index: 100;
+  position: sticky;
+  top: 0;
 }
 
-
-.swiggy-logo-other{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
+.swiggy-logo-other {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
-.swiggy-logo-other button{
+.swiggy-logo-other img {
+  width: 50px;
+  height: 50px;
+}
+
+.swiggy-logo-other button {
   border: none;
   background: transparent;
   text-decoration: underline;
   font-weight: 600;
   font-size: 15px;
+  cursor: pointer;
+  color: #333;
 }
 
+.swiggy-logo-other button:hover {
+  color: #fc8019;
+}
 
-.nav-items-list ul{
-    list-style: none;
+.nav-items-list ul {
+  list-style: none;
   display: flex;
   gap: 60px;
   margin: 0;
   padding: 0;
-     font-weight: 600;
+  font-weight: 600;
   font-size: 15px;
 }
+
 .nav-items-list li {
   cursor: pointer;
   font-size: 16px;
   color: #333;
   transition: color 0.3s ease;
 }
-.nav-items-list li:hover,
-.swiggy-logo-other button:hover {
+
+.nav-items-list li:hover {
   color: #fc8019;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ✅ Responsive Design for ≤800px */
+@media (max-width: 855px) {
+  .hamburger {
+    
+    display: block;
+  }
+
+  .nav-items-list {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-top: 1px solid #eee;
+  }
+
+  .nav-items-list.open {
+    display: block;
+  }
+
+  .nav-items-list ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav-items-list li {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 300px){
+  .swiggy-logo-other img{
+    width: 50px;
+  height: 50px;
+
+  }
 }
