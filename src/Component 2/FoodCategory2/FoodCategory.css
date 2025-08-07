@@ -1,0 +1,89 @@
+.food-category-container{
+    padding: 40px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+     background-color: #f8f8f8;
+
+}
+.recipe-card{
+    background-color: white;
+    border-radius: 15px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+   transition: transform 0.2s;
+}
+.recipe-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.recipe-card-content {
+  padding: 15px;
+}
+
+.recipe-card-content h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+.recipe-card-content p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+.recipe-card-content p:first-of-type {
+  font-weight: bold;
+  color: #000;
+}
+.cuisine-add {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.cuisine-add span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Reuse or enhance button style */
+.cuisine-add button {
+  padding: 6px 14px;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cuisine-add button:hover {
+  background-color: #e65c00;
+}
+
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qty-controls button {
+  padding: 4px 10px;
+  font-size: 16px;
+  background-color: #ff6f00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.qty-controls span {
+  font-size: 14px;
+}
