@@ -1,4 +1,4 @@
-.Navbar2-container {
+.Navbar2-container2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,18 +12,18 @@
   top: 0;
 }
 
-.swiggy-logo-other {
+.swiggy-logo-other2 {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.swiggy-logo-other img {
+.swiggy-logo-other2 img {
   width: 50px;
   height: 50px;
 }
 
-.swiggy-logo-other button {
+.swiggy-logo-other2 button {
   border: none;
   background: transparent;
   text-decoration: underline;
@@ -33,11 +33,11 @@
   color: #333;
 }
 
-.swiggy-logo-other button:hover {
+.swiggy-logo-other2 button:hover {
   color: #fc8019;
 }
 
-.nav-items-list ul {
+.nav-items-list2 ul {
   list-style: none;
   display: flex;
   gap: 60px;
@@ -47,33 +47,33 @@
   font-size: 15px;
 }
 
-.nav-items-list li {
+.nav-items-list2 li {
   cursor: pointer;
   font-size: 16px;
   color: #333;
   transition: color 0.3s ease;
 }
 
-.nav-items-list li:hover {
+.nav-items-list2 li:hover {
   color: #fc8019;
 }
 
-/* Hamburger icon */
-.hamburger {
+
+.hamburger2 {
   display: none;
   font-size: 30px;
   cursor: pointer;
   user-select: none;
 }
 
-/* ✅ Responsive Design for ≤800px */
+
 @media (max-width: 855px) {
-  .hamburger {
+  .hamburger2 {
     
     display: block;
   }
 
-  .nav-items-list {
+  .nav-items-list2 {
     display: none;
     position: absolute;
     top: 70px;
@@ -86,23 +86,23 @@
     border-top: 1px solid #eee;
   }
 
-  .nav-items-list.open {
+  .nav-items-list2.open {
     display: block;
   }
 
-  .nav-items-list ul {
+  .nav-items-list2 ul {
     flex-direction: column;
     gap: 20px;
   }
 
-  .nav-items-list li {
+  .nav-items-list2 li {
     padding: 10px 0;
     font-size: 18px;
   }
 }
 
 @media (max-width: 300px){
-  .swiggy-logo-other img{
+  .swiggy-logo-other2 img{
     width: 50px;
   height: 50px;
 

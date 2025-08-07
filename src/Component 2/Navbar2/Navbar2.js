@@ -7,17 +7,17 @@ export default function Navbar2() {
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
-    <div className='Navbar2-container'>
-      <div className='swiggy-logo-other'>
+    <div className='Navbar2-container2'>
+      <div className='swiggy-logo-other2'>
         <img src="./images/swiggy12.png" alt="Swiggy" />
         <button>Others</button>
       </div>
 
-      <div className="hamburger" onClick={toggleMenu}>
+      <div className="hamburger2" onClick={toggleMenu}>
         ☰
       </div>
 
-      <div className={`nav-items-list ${menuOpen ? 'open' : ''}`}>
+      <div className={`nav-items-list2 ${menuOpen ? 'open' : ''}`}>
         <ul>
           <li>
             <a
