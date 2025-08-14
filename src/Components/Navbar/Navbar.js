@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Navigate } from 'react-router-dom';
 
 export default function Navbar({ setShowLogin, onLogout, user }) {
   const [menuOpen, setMenuOpen] = useState(false);
+
+
 
   return (
     <div className='navbar'>
@@ -21,7 +24,7 @@ export default function Navbar({ setShowLogin, onLogout, user }) {
 
       <div className={`nav-menu-wrapper ${menuOpen ? 'open' : ''}`}>
         <div className="nav-menu">
-          <button className='menu-btn'>Swiggy Corporate</button>
+         <button className='menu-btn'onClick={() => window.location.href = "https://www.swiggy.com/corporate/"}> Swiggy Corporate</button>
           <button className='menu-btn'>Partner with us</button>
         </div>
 

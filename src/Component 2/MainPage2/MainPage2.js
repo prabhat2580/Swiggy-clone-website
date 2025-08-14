@@ -10,8 +10,8 @@ export default function MainPage2() {
         <Navbar2/>
 
         <FoodCategory/>
-        {/* <Restaurents/> */}
-        {/* <FooterLast/> */}
+        <Restaurents/>
+        <FooterLast/>
         
     
 

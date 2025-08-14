@@ -14,7 +14,7 @@ export default function Cart() {
     <div className="cart-container">
       <h2>Your Cart</h2>
       {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
+        <p className='cart-container-para-1' >Your cart is empty.</p>
       ) : (
         <div>
           {cartItems.map((item) => (

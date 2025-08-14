@@ -12,6 +12,31 @@
   top: 0;
 }
 
+.nav-cart-count {
+  position: absolute; /* Position it relative to the cart icon */
+  top: -14px;           /* Adjust position vertically */
+  right: -10px;         /* Adjust position horizontally */
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 2px;
+  border-radius: 50%;  /* Makes it round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 18px;     /* Keeps it circular even with single digits */
+  height: 15px;
+}
+
+.cart-img {
+  position: relative; /* Needed so the badge positions itself correctly */
+          /* Adjust cart size */
+  height: 23px;
+}
+
+
+
 .swiggy-logo-other2 {
   display: flex;
   align-items: center;
