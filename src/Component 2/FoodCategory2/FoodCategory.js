@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './FoodCategory.css';
 import { useCart } from '../../Context/CartContext'; // adjust path
+import ShimmerCard from '../../ShimmerLoading/ShimmerCard';
 
 export default function FoodCategory() {
   const [recipes, setRecipes] = useState([]);
@@ -24,7 +25,13 @@ export default function FoodCategory() {
     getData();
   }, []);
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return (
+    <div className="food-category-container">
+      {Array(8).fill(0).map((_, idx) => (
+        <ShimmerCard key={idx} />
+      ))}
+    </div>
+  );
   if (error) return <p style={{ color: 'red' }}>{error}</p>;
 
   return (
